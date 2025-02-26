@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login Form</title>
+    <style>
+      #first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 4px darkslateblue solid;
+        height: 390px;
+        border-radius: 20px;
+        margin-left: 30%;
+        margin-right: 30%;
+        background-color: rgba(0, 225, 191, 0.879);
+        margin-top: 150px;
+        position: relative;
+      }
+      #first input {
+        border-radius: 10px;
+        width: 250px;
+        height: 30px;
+      }
+      #first button {
+        width: 75px;
+        height: 30px;
+        background-color: black;
+        color: aliceblue;
+        border: 3px white solid;
+        border-radius: 5px;
+      }
+      ::placeholder {
+        color: black;
+        padding-left: 30px;
+      }
+      td {
+        padding-bottom: 30px;
+      }
+      h1 {
+        font-size: 45px;
+      }
+      label {
+        font-size: 25px;
+      }
+      #h {
+        position: absolute;
+        bottom: 30px;
+        left: 172px;
+      }
+      #hr {
+        position: absolute;
+        bottom: 30px;
+        left: 365px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first">
+      <h1>Login Form</h1>
+      <form action="">
+        <table>
+          <tr>
+            <td>
+              <label for="na">UserName </label>
+            </td>
+            <td><input type="text" id="na" placeholder="Enter UserName" /></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="em">Password</label>
+            </td>
+            <td><input type="email" id="em" placeholder="Enter Password" /></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <button onclick="SubmitForm()">Submit</button>
+            </td>
+          </tr>
+
+          <h3 id="h">Don't have an account?</h3>
+
+          <a href="RegistrationForm.html"><h3 id="hr">Register</h3></a>
+        </table>
+      </form>
+    </div>
+    <script>
+      function SubmitForm() {
+        alert("Confirm Submit?");
+        return true;
+      }
+    </script>
+  </body>
+</html>

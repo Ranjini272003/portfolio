@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .main1 {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      #img1 {
+        width: 100%;
+        height: 100%;
+      }
+      #img2 {
+        width: 150px;
+        height: 70px;
+      }
+      .main11 {
+        position: absolute;
+        top: 5px;
+      }
+      .main12 {
+        width: 92vw;
+        height: 350px;
+        position: absolute;
+        top: 90px;
+        left: 4vw;
+      }
+      #img3 {
+        width: 100%;
+        height: 100%;
+        filter: brightness(50%);
+        border: 2px white solid;
+        border-radius: 20px;
+      }
+      .main13 {
+        width: 80vw;
+        height: 200px;
+        color: white;
+        position: absolute;
+        top: 120px;
+        left: 10vw;
+        text-align: center;
+      }
+      .main14 {
+        position: absolute;
+        top: 30px;
+        right: 70px;
+      }
+      .main14 select {
+        width: 90px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border: 2px white solid;
+        border-radius: 30px;
+        padding-left: 10px;
+      }
+      .main14 button {
+        width: 80px;
+        height: 30px;
+        background-color: red;
+        color: white;
+        border: 2px white solid;
+        border-radius: 30px;
+      }
+      .main15 {
+        width: 70vw;
+        height: 320px;
+        position: absolute;
+        top: 340px;
+        left: 20vw;
+      }
+      #img4 {
+        width: 190px;
+        height: 240px;
+        border: 2px white solid;
+        border-radius: 20px;
+      }
+      .sub1 {
+        position: relative;
+        padding-left: 20px;
+        transition: all ease 0.3s;
+      }
+      .sub1:hover {
+        transform: scale(1.15);
+      }
+      .sub11 {
+        position: absolute;
+        padding-left: 5px;
+        bottom: 190px;
+        color: white;
+      }
+      .main16 {
+        position: absolute;
+        bottom: 30px;
+        left: 600px;
+      }
+      .main16 input {
+        width: 180px;
+        height: 25px;
+        border: 2px white solid;
+        border-radius: 20px;
+        background-color: black;
+      }
+      .main16 button {
+        width: 110px;
+        height: 25px;
+        border: 2px white solid;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+      }
+      .main16 input::placeholder {
+        padding-left: 30px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main1">
+      <img src="Brown Background.jpg" alt="" id="img1" />
+      <div class="main11">
+        <img src="Netflix Logo.png" alt="" id="img2" />
+      </div>
+      <div class="main12">
+        <img src="Netflix background.jpg" alt="" id="img3" />
+      </div>
+      <div class="main13">
+        <h1>Endless Entertainment Starts Here.</h1>
+        <h1>Plans from ₹149</h1>
+        <p>Cancel or Switch Plans at anytime</p>
+      </div>
+      <div class="main14">
+        <table>
+          <tr>
+            <td>
+              <select name="" id="">
+                <option value="">English</option>
+                <option value="">தமிழ்</option>
+                <option value="">हिन्दी</option>
+              </select>
+            </td>
+            <td>
+              <button>Sign In</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="main15">
+        <table>
+          <tr>
+            <td>
+              <div class="sub1">
+                <img src="Ayalaan.jpg" id="img4" />
+                <div class="sub11">
+                  <h1>Ayalaan</h1>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="sub1">
+                <img src="Puspa2.jpg" id="img4" />
+                <div class="sub11">
+                  <h1>Pushpa2</h1>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="sub1">
+                <img src="Kanguva.jpg" id="img4" />
+                <div class="sub11">
+                  <h1>Kanguva</h1>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="sub1">
+                <img src="Siren.jpg" id="img4" />
+                <div class="sub11">
+                  <h1>Siren</h1>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="main16">
+        <table>
+          <tr>
+            <td>
+              <input type="email" placeholder="Enter Email Here" />
+            </td>
+            <td>
+              <button>Submit</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

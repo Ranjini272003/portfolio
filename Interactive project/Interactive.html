@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InteractiveWebsite</title>
+    <style>
+      body {
+        position: relative;
+      }
+      .min1 {
+        position: absolute;
+        top: 100px;
+        left: 180px;
+        border: 3px black solid;
+        border-radius: 25px;
+        width: 400px;
+        height: 450px;
+        background-color: rgb(160, 248, 219);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .min1 td {
+        padding: 10px;
+      }
+
+      .min1 input {
+        width: 250px;
+        height: 40px;
+        border: 2px black solid;
+        border-radius: 20px;
+      }
+      .min1 input::placeholder {
+        padding-left: 30px;
+        font-size: larger;
+      }
+      .min1 button {
+        width: 100px;
+        height: 30px;
+        background-color: black;
+        border: 3px white solid;
+        border-radius: 10px;
+        color: white;
+      }
+      #d1 {
+        position: absolute;
+        top: 100px;
+        right: 300px;
+        border: 3px black solid;
+        border-radius: 25px;
+        width: 400px;
+        height: 450px;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 25px;
+        border: 2px white solid;
+        border-radius: 25px;
+      }
+
+      .min3 {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+      }
+      .min3 button {
+        width: 90px;
+        height: 30px;
+        border-radius: 25px;
+      }
+      #b1 {
+        border: 3px black solid;
+        background-color: white;
+      }
+      #b2 {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min1">
+      <h1>Details</h1>
+      <table>
+        <tr>
+          <td><input type="text" placeholder="Enter Name" id="in1" /></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Enter Image URL " id="im1" /></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Enter Bio " id="in2" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="updateBio()"><b>Submit</b></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="min2" id="d1">
+      <h2 id="h"><b>Profile</b></h2>
+
+      <h1 id="h1">Name</h1>
+      <img src="" alt="" id="img1" />
+      <h1 id="h2">Bio</h1>
+    </div>
+    <div class="min3">
+      <table>
+        <tr>
+          <td>
+            <button id="b1"><b>Light</b></button>
+          </td>
+          <td>
+            <button id="b2"><b>Dark</b></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function updateBio() {
+        let Name = document.getElementById("in1").value;
+        let Image = document.getElementById("im1").value;
+        let Bio = document.getElementById("in2").value;
+        document.getElementById("h1").innerHTML = Name;
+        document.getElementById("img1").src = Image;
+        document.getElementById("h2").innerHTML = Bio;
+      }
+      document.getElementById("b1").onclick = function () {
+        document.getElementById("d1").style.backgroundColor = "white";
+        document.getElementById("d1").style.color = "black";
+        document.getElementById("img1").style.border = " 2px solid black";
+      };
+      document.getElementById("b2").onclick = function () {
+        document.getElementById("d1").style.backgroundColor = "black";
+        document.getElementById("d1").style.color = "white";
+        document.getElementById("img1").style.border = " 2px solid white";
+      };
+    </script>
+  </body>
+</html>
